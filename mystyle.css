@@ -7,6 +7,7 @@ td {
 	width: 40px;
 	height: 40px;
 	text-align: center;
+	font-size: 20px;
 }
 
 td:nth-child(3n+0) {
@@ -19,4 +20,8 @@ tr:nth-child(3n+0) {
 
 table {
 	border: 3px solid black;
+}
+
+#lock {
+	margin-top: 10px;
 }
