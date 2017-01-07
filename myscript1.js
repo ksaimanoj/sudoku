@@ -14,7 +14,7 @@ function extract_data_from_table() {
 		});
 		tab_val.push(one_row);
 	});
-	console.log(tab_val);
+	//console.log(tab_val);
 }
 
 $('#lock').click(function() {
@@ -24,6 +24,7 @@ $('#lock').click(function() {
 				$(this).css('font-weight','bolder');
 				$(this).css('font-size','22px');
 				$(this).attr('contenteditable','false');
+				$(this).css('color','red');
 			}
 		});
 	});
