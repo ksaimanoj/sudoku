@@ -170,8 +170,19 @@ function publish () {
 }
 
 function check_if_number_unique_in_block (a, b) {
-	var count = 0;
 	for (var k = 0; k < 9; k++) {
-		
+		var count = 0;
+		for (var i = 3*a; i < 3*(a+1); i++) {
+			for (var j = 3*b; j < 3*(b+1); j++) {
+				if(possibility[i][j][k]) count++;
+			};
+		};
+		if(count == 1) {
+			for (var i = 3*a; i < 3*(a+1); i++) {
+				for (var j = 3*b; j < 3*(b+1); j++) {
+					if(possibility[i][j][k]) answers.push([i,j,k+1]);
+				};
+			};
+		}
 	};
 }
